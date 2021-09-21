@@ -19,7 +19,7 @@ UI/UX: Shin-you Hou
 
 Front-End Development: Inayat Lakhani 
 
-Back-End Development: 
+Back-End Development: Choenden Kyirong
 
 Extra Admin/SME Help: Lisa N. Cao, Brian Gershon, Ruiz Rivera
 
