@@ -15,13 +15,13 @@ Team lead: Bryce Haley
 
 Mentor: Oisín Bates
 
-Documentation:
+UI/UX: Shin-you Hou
 
-Scripting:
+Front-End Development: Inayat Lakhani 
 
-Modelling: 
+Back-End Development: 
 
-Sanity checking: 
+Extra Admin/SME Help: Lisa N. Cao, Brian Gershon, Ruiz Rivera
 
 ## Vancouver Datajam 2021 Schedule:
 
