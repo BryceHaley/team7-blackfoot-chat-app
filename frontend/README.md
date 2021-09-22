@@ -21,6 +21,8 @@ Once Node.js is installed:
     cd frontend     # go to the frontend folder in this repo
     npm install
 
+For your editor, please install the `Prettier` plugin. You can then run this on a file to keep it nicely indented and formatted.
+
 ## How to run it locally
 
     npm start

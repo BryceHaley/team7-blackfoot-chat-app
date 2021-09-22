@@ -1,4 +1,5 @@
 html {
+  height: 100%;
   font-size: 62.5%;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,9 +7,19 @@ html {
     sans-serif;
 
   color: #111;
-  background-color: #F8F3ED;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  height: 100%;
   font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

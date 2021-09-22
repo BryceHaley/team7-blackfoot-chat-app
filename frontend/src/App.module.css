@@ -1,6 +1,16 @@
 .app {
   margin: auto;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #c4c4c4;
+}
+
+.nav {
+  display: block;
+  flex: 1;
+  padding: 5rem;
 }
 
 .nav ul {
@@ -9,6 +19,19 @@
 }
 
 .nav li {
-  display: inline-block;
   margin: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:visited {
+  /* color: #111; */
+  color: #b53a1b;
+}
+
+.content {
+  flex: 2;
+  background-color: #f8f3ed;
 }
