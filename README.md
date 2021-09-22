@@ -1,5 +1,9 @@
 # Blackfoot Chat app
 
+## Instructions for running the web app locally
+
+* To setup and run the website frontend, see [./frontend/README.md](./frontend/README.md)
+
 ## Acknowledgements
 This project is brought forward by a partner: Simon Fraser University, Department of Indigneous Studies and Department of Computing Science, by Prof. Eldon Yellowhorn and Dr. Angelica Lim.
 
@@ -17,11 +21,11 @@ Mentor: Oisín Bates
 
 UI/UX: Shin-you Hou
 
-Front-End Development: Inayat Lakhani 
+Front-End Development: Inayat Lakhani, Brian Gershon
 
 Back-End Development: Choenden Kyirong
 
-Extra Admin/SME Help: Lisa N. Cao, Brian Gershon, Ruiz Rivera
+Extra Admin/SME Help: Lisa N. Cao, Ruiz Rivera
 
 ## Vancouver Datajam 2021 Schedule:
 
