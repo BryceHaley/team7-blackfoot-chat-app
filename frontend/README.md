@@ -8,6 +8,8 @@ This is a React-based application. Components are in the `/src` folder.
 
 For styling, we're using [CSS Modules](https://github.com/css-modules/css-modules) which allow you to independently style React components. Each React component also has a corresponding `.module.css` file. For global styling across whole site, see `/public/index.css`.
 
+To update navigation, check out `App.jsx`.
+
 ## How to setup locally
 
 You need to have Node.js installed. This also installs the `npm` package manager. Here are some options:

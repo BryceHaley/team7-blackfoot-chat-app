@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      Explore the Blackfoot language!
-    </div>
+    <p>
+      Welcome! Explore the Blackfoot language though{' '}
+      <Link to="/story">story</Link>.
+    </p>
   );
 }
 

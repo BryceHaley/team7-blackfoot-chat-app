@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.cardContent {
+  flex: 4;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.cardNext {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #E2AF2C;
+  margin: 2rem;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.blackfootWord {
+  font-size: 3rem;
+  color: #b53a1b;
+  padding: 3rem;
+  text-align: center;
+}
+
+.englishWord {
+  color: #b53a1b;
+}
+
+.audioControls {
+  padding: 2rem 0;
+}

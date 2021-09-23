@@ -3,7 +3,11 @@ import React from 'react';
 function About() {
   return (
     <div>
-      <h1>About</h1>
+      <p>
+        The goal of this project is to develop an interactive web based
+        application that allows an English speaker to explore the Blackfoot
+        language, and vice versa.
+      </p>
     </div>
   );
 }

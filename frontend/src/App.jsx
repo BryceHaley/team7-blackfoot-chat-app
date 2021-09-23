@@ -1,8 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from 'react-router-dom';
 
 import Home from './Home';
 import About from './About';
+import StoryPage from './StoryPage';
 import styles from './App.module.css';
 
 function App() {
@@ -13,10 +19,19 @@ function App() {
           <nav className={styles.nav}>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/" exact activeClassName={styles.active}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <NavLink to="/story" activeClassName={styles.active}>
+                  Story
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" activeClassName={styles.active}>
+                  About
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -29,6 +44,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/story">
+              <StoryPage />
             </Route>
           </Switch>
         </div>

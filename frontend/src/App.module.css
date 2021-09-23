@@ -1,16 +1,23 @@
 .app {
   margin: auto;
-  text-align: center;
+  text-align: left;
   display: flex;
   justify-content: space-between;
   height: 100%;
   background-color: #c4c4c4;
 }
 
+.content {
+  flex: 2;
+  background-color: #f8f3ed;
+  padding: 4rem 5rem;
+}
+
 .nav {
   display: block;
   flex: 1;
-  padding: 5rem;
+  padding: 7rem 5rem;
+  min-width: 150px;
 }
 
 .nav ul {
@@ -26,12 +33,13 @@
   text-decoration: none;
 }
 
+.nav a,
 .nav a:visited {
-  /* color: #111; */
-  color: #b53a1b;
+  color: #111;
 }
 
-.content {
-  flex: 2;
-  background-color: #f8f3ed;
+.nav a.active,
+.nav a.active:visited {
+  color: #b53a1b;
+  font-weight: bold;
 }
