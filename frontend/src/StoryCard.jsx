@@ -1,6 +1,16 @@
 import React from 'react';
 import styles from './StoryCard.module.css';
 
+const stories = [{
+  1: {
+    term: 'fish',
+    sentence: 'A long, long, long time ago there once live a {term}',
+  },
+  2: {
+    term: 'raven',
+    sentence: 'A long, long, long time ago there once live a {term}',
+  },
+}];
 function StoryCard() {
   return (
     <div className={styles.card}>
@@ -18,9 +28,7 @@ function StoryCard() {
         </div>
       </div>
 
-      <div className={styles.cardNext}>
-        Next&nbsp;&gt;
-      </div>
+      <div className={styles.cardNext}>Next&nbsp;&gt;</div>
     </div>
   );
 }

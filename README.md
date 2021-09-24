@@ -6,6 +6,10 @@ Site hosted at: <https://team7-blackfoot-chat-app.netlify.app/>
 
 * To setup and run the website frontend, see [./frontend/README.md](./frontend/README.md)
 
+## API Reference
+
+* See [./backend/app.py](./backend/app.py) for the API routes.
+
 ## Acknowledgements
 This project is brought forward by a partner: Simon Fraser University, Department of Indigneous Studies and Department of Computing Science, by Prof. Eldon Yellowhorn and Dr. Angelica Lim.
 
