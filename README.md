@@ -1,5 +1,7 @@
 # Blackfoot Chat app
 
+Site hosted at: <https://team7-blackfoot-chat-app.netlify.app/>
+
 ## Instructions for running the web app locally
 
 * To setup and run the website frontend, see [./frontend/README.md](./frontend/README.md)
