@@ -4,11 +4,11 @@ import styles from './StoryCard.module.css';
 const stories = [{
   1: {
     term: 'fish',
-    sentence: 'A long, long, long time ago there once live a {term}',
+    sentence: 'A long, long, long time ago there once lived a {term}',
   },
   2: {
     term: 'raven',
-    sentence: 'A long, long, long time ago there once live a {term}',
+    sentence: 'A long, long, long time ago there once lived a {term}',
   },
 }];
 function StoryCard() {
@@ -17,7 +17,7 @@ function StoryCard() {
       <div className={styles.cardContent}>
         <div className={styles.blackfootWord}>mamii</div>
         <div>
-          A long, long, long time ago there once live a{' '}
+          A long, long, long time ago there once lived a{' '}
           <span className={styles.englishWord}>fish</span>.
         </div>
         <div className={styles.audioControls}>
