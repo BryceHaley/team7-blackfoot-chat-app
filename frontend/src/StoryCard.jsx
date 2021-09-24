@@ -52,7 +52,7 @@ function StoryCard() {
           </audio>
         </div>
 
-        <RecordAudio blackfootPhrase={blackfootWord}></RecordAudio>
+        <RecordAudio englishPhrase={'fish'} blackfootPhrase={blackfootWord}></RecordAudio>
       </div>
 
       <div className={styles.cardNext}>Next&nbsp;&gt;</div>

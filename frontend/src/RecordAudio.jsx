@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
 import { useReactMediaRecorder } from './lib/ReactMediaRecorder';
+import http from './lib/http-common';
 import styles from './RecordAudio.module.css';
 
-function onStop() {
-  console.log('Recording stopped');
-}
-
-function uploadRecording() {
-  console.log('TODO: UPLOAD RECORDING');
-}
-
-function RecordAudio({ blackfootPhrase }) {
+function RecordAudio({ blackfootPhrase, englishPhrase }) {
   const { status, startRecording, stopRecording, mediaBlobUrl } =
-    useReactMediaRecorder({ audio: true, onStop });
+    useReactMediaRecorder({ audio: true });
 
   function toggleRecording() {
     if (status === 'idle' || status === 'stopped') {
@@ -20,6 +13,26 @@ function RecordAudio({ blackfootPhrase }) {
       return;
     }
     stopRecording();
+  }
+
+  async function uploadRecording() {
+    if (mediaBlobUrl) {
+      let blob = await fetch(mediaBlobUrl).then((r) => r.blob());
+
+      const form = new FormData();
+      form.append('recording', blob, 'recording.wav');
+      form.append('english_term', englishPhrase);
+
+      return await http.post(`/audio_data`, form, {
+        headers: {
+          'Content-Type': `multipart/form-data; boundary=${form._boundary}`,
+        },
+        timeout: 30000,
+      });
+    }
+
+    // otherwise
+    console.log('no audio blob');
   }
 
   return (
@@ -39,7 +52,11 @@ function RecordAudio({ blackfootPhrase }) {
         )}
       </button>
 
-      {status === 'recording' && <div className={styles.recordingInProgress}>Recording in progress...</div>}
+      {status === 'recording' && (
+        <div className={styles.recordingInProgress}>
+          Recording in progress...
+        </div>
+      )}
 
       {/* <div>{status}</div> */}
 
