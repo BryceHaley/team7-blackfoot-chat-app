@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './StoryCard.module.css';
+import RecordAudio from './RecordAudio'
 
 const stories = [{
   1: {
@@ -26,6 +27,8 @@ function StoryCard() {
             Your browser does not support the audio element.
           </audio>
         </div>
+
+        <RecordAudio blackfootPhrase={'mamii'}></RecordAudio>
       </div>
 
       <div className={styles.cardNext}>Next&nbsp;&gt;</div>

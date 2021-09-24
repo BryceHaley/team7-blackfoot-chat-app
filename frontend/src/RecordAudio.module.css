@@ -1,0 +1,20 @@
+.recordingWrapper {
+  border: 1px dotted #111;
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.recordingButton {
+    margin: 2rem;
+}
+.playRecorded {
+  margin: 0;
+}
+
+.blackfootPhrase {
+  color: #b53a1b;
+}
+
+.recordingInProgress {
+  color: #b53a1b;
+}
