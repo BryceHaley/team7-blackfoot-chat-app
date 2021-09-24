@@ -8,6 +8,8 @@ Site hosted at: <https://team7-blackfoot-chat-app.netlify.app/>
 
 ## API Reference
 
+API is hosted at <https://blackfoot-language-app.herokuapp.com/>.
+
 * See [./backend/app.py](./backend/app.py) for the API routes.
 
 ## Acknowledgements

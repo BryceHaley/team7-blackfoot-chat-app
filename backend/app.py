@@ -17,7 +17,7 @@ def audio_data():
         english_term = request_data['english_term']
         # audio_file = request.files['audio']
 
-        return jsonify({'response': 'audio file recieved.', 'english_term': english_term})
+        return jsonify({'response': 'audio file received.', 'english_term': english_term})
 
 
 
