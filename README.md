@@ -59,10 +59,10 @@ Extra Admin/SME Help: Lisa N. Cao, Ruiz Rivera
 |8:40 - 9:10| Keynote: How to use the tools of data science to benefit Indigenous peoples and organizations  with Hannes Edinger |
 |9:10 -  9:30| Keynote Q&A |
 |9:30 | Help desk opens up, teams work on their project |
-|9:30 - 10:00| Teams brainstorm tasks for the day|
-|12:30 - 13:00| Team check in: share exploratory analysis results |
-|15:30 - 16:00| Team check in: teams discuss presentation format and preliminary results|
-|16:00 - 16:45| Teams prepare their 5-10 minute presentation, teams ensure all code is documented and stored in GitHub|
+|10:00| Team meeting - all in|
+|13:30| Team check in: check status of devolopment and re-scope as needed |
+|15:30 - 16:00| Team check in: teams discuss presentation format|
+|16:00 - 16:45| Team prepare our 5-10 minute presentation, team ensure all code is documented and stored in GitHub|
 |17:00| Project video submission deadline|
 |17:30 - 18:30| Project videos released on YouTube. Vote for your favourite team demo!| 
 |18:30 - 20:00 | Career panel|
