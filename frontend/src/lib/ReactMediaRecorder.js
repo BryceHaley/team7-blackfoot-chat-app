@@ -1,6 +1,10 @@
 // This is a modified version of the original MIT-licensed package: https://github.com/0x006F/react-media-recorder
 // Original module was causing snowpack to bring in a second version of React, breaking hooks, so wasn't usable.
-// Here's a copy and paste of that code, minus the TypeScript annotations to avoid TypeScript dependency.
+//
+// Change log:
+//
+// 9/24/21 @briangershon copy and pasted in this code and removed TypeScript annotations to avoid TypeScript dependency.
+// 9/25/21 @briangershon updated clearBlobUrl to also set status back to 'idle' since Blob is cleared.
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 
@@ -198,7 +202,10 @@ export function useReactMediaRecorder({
     previewStream: mediaStream.current
       ? new MediaStream(mediaStream.current.getVideoTracks())
       : null,
-    clearBlobUrl: () => setMediaBlobUrl(null),
+    clearBlobUrl: () => {
+      setMediaBlobUrl(null);
+      setStatus('idle');
+    },
   };
 }
 

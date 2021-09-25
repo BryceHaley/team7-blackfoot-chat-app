@@ -4,7 +4,7 @@ import http from './lib/http-common';
 import styles from './RecordAudio.module.css';
 
 function RecordAudio({ blackfootPhrase, englishPhrase }) {
-  const { status, startRecording, stopRecording, mediaBlobUrl } =
+  const { status, startRecording, stopRecording, mediaBlobUrl, clearBlobUrl } =
     useReactMediaRecorder({ audio: true });
 
   function toggleRecording() {
@@ -23,38 +23,53 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
       form.append('recording', blob, 'recording.wav');
       form.append('english_term', englishPhrase);
 
-      return await http.post(`/audio_data`, form, {
-        headers: {
-          'Content-Type': `multipart/form-data; boundary=${form._boundary}`,
-        },
-        timeout: 30000,
-      });
+      try {
+        const results = await http.post(`/audio_data`, form, {
+          headers: {
+            'Content-Type': `multipart/form-data; boundary=${form._boundary}`,
+          },
+          timeout: 30000,
+        });
+        clearBlobUrl();
+      } catch (e) {
+          console.log(e.toJSON());
+      }
     }
 
-    // otherwise
-    console.log('no audio blob');
+    // otherwise no audio blob to upload
   }
 
   return (
     <div className={styles.recordingWrapper}>
-      <div>
-        Would you like to record your pronunciation of{' '}
-        <span className={styles.blackfootPhrase}>{blackfootPhrase}</span>?
-      </div>
+      {status === 'idle' && (
+        <button onClick={toggleRecording} title="Start recording" className={styles.recordingButton}>
+          <span>[microphone icon]</span>
+        </button>
+      )}
 
-      <button onClick={toggleRecording} className={styles.recordingButton}>
-        {status === 'recording' ? (
-          <>
-            <span>Stop recording</span>
-          </>
-        ) : (
-          <span>Start recording</span>
-        )}
-      </button>
+      {status === 'idle' && (
+        <div className={styles.instructions}>
+          Record your own pronounciation of the Blackfoot word{' '}
+          <span className={styles.blackfootPhrase}>{blackfootPhrase}</span>.
+        </div>
+      )}
+
+      {status === 'idle' && (
+        <div className={styles.instructions}>
+          If you choose to upload your recording, the audio will be used for
+          Blackfoot language analysis in order to allow us to build a better
+          library of Blackfoot language recordings. No personally identifiable
+          information is saved with your upload.
+          {/* Additional thoughts to simplify: By using this site's audio-recording feature, you are consenting to your voice being stored and analyzed. No personal information is saved and your recordings will be anonymous. */}
+        </div>
+      )}
 
       {status === 'recording' && (
         <div className={styles.recordingInProgress}>
-          Recording in progress...
+          Recording in progress...{' '}
+          <button onClick={toggleRecording} className={styles.recordingButton}>
+            <span>[stop recording]</span>
+          </button>
         </div>
       )}
 
@@ -68,7 +83,7 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
             autoPlay
             className={styles.playRecorded}
           />
-          <button onClick={uploadRecording}>Upload Recording</button>
+          <button onClick={uploadRecording}>Save Recording</button>
         </>
       )}
     </div>
