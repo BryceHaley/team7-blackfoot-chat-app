@@ -4,4 +4,6 @@ It is preferable that you list your data sources in this readme. **Do not store 
 
 Data sources selected for the event are public. Check the licenses of these data sources to ensure you give proper attribution and indicate what changes you made. 
 
-You can also use this directory to document how you processed the data. 
+You can also use this directory to document how you processed the data.
+
+For the frontend to have access to the dictionary, this has been moved to `./frontend/src/data`
