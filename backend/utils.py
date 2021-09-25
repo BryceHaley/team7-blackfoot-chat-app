@@ -3,7 +3,11 @@ from datetime import datetime
 import cloudinary
 from cloudinary import uploader, api
 from dotenv import load_dotenv
+from pydub import AudioSegment
+import numpy as np
 import os
+from io import BytesIO
+
 
 
 # for saving locally
@@ -46,3 +50,26 @@ def upload_to_cloud(file, english_term):
       resource_type = "auto")
 
     return upload_result
+
+
+def analyze_audio(file, english_term):
+    """Preprocess and produce cosine similarity score between user reacorded audio and pre-recorded pronunciation.
+
+    Returns: A percentage from 0-100."""
+    truth = np.load(f'{english_term}_vector.npy')
+    print(truth)
+
+    print(BytesIO(file.read()))
+
+    obj = AudioSegment.from_file(BytesIO(file.read()))
+    print(obj)
+    #normalized_fish = match_target_amplitude(audio_fish, -20.0)
+
+
+
+
+
+
+
+def preprocess_audio(truth, sample):
+    pass
