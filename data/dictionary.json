@@ -195,7 +195,7 @@
         "translation": "Tsa Niitsistsaa? (Animate)",
         "audio": "how_much_does_that_cost?.wav"
     },
-    "How Much Does That Cost?": {
+    "How Much Does That Cost? (Inanimate)": {
         "translation": "Tsa Niitsohtoopi? (Inanimate)",
         "audio": "how_much_does_that_cost?.wav"
     },
@@ -381,7 +381,7 @@
     },
     "Ten Cents (Dime)": {
         "translation": "Kiipanoa’Kssi",
-        "audio": "ten_cents_(dime).wav"
+        "audio": "dime.wav"
     },
     "Ten Dollars": {
         "translation": "Kiipii",
@@ -459,10 +459,6 @@
         "translation": "Aapinakos",
         "audio": "tomorrow.wav"
     },
-    "Tomorrow": {
-        "translation": "Apinako’Ssi",
-        "audio": "tomorrow.wav"
-    },
     "Tomorrow I Will Go To The Cinema": {
         "translation": "Aapinakos Nitaakitapoo Aisaksittoo",
         "audio": "tomorrow_i_will_go_to_the_cinema.wav"
@@ -493,7 +489,7 @@
     },
     "Twenty-Five Cents (Quarter)": {
         "translation": "I’Nakanao’Kssi",
-        "audio": "twenty-five_cents_(quarter).wav"
+        "audio": "quarter.wav"
     },
     "Two": {
         "translation": "Naato’Ka",
