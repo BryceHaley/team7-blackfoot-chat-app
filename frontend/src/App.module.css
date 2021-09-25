@@ -5,6 +5,7 @@
   justify-content: space-between;
   height: 100%;
   background-color: #c4c4c4;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .content {
@@ -61,3 +62,5 @@
     padding: 0;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
