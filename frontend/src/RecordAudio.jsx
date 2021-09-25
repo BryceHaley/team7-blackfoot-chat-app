@@ -32,7 +32,7 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
         });
         clearBlobUrl();
       } catch (e) {
-          console.log(e.toJSON());
+        console.log(e.toJSON());
       }
     }
 
@@ -42,14 +42,18 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
   return (
     <div className={styles.recordingWrapper}>
       {status === 'idle' && (
-        <button onClick={toggleRecording} title="Start recording" className={styles.recordingButton}>
-          <span>[microphone icon]</span>
+        <button
+          onClick={toggleRecording}
+          title="Start recording"
+          className={styles.recordingButton}
+        >
+          {/* <span><img className={styles.icon} src="/icons/microphone.png" /></span> */}
         </button>
       )}
 
       {status === 'idle' && (
         <div className={styles.instructions}>
-          Record your own pronounciation of the Blackfoot word{' '}
+          Record your own pronunciation of the Blackfoot word{' '}
           <span className={styles.blackfootPhrase}>{blackfootPhrase}</span>.
         </div>
       )}
@@ -67,9 +71,11 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
       {status === 'recording' && (
         <div className={styles.recordingInProgress}>
           Recording in progress...{' '}
-          <button onClick={toggleRecording} className={styles.recordingButton}>
-            <span>[stop recording]</span>
-          </button>
+          <button
+            onClick={toggleRecording}
+            title="Stop recording"
+            className={styles.stopRecordingButton}
+          >Stop</button>
         </div>
       )}
 
@@ -83,7 +89,7 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
             autoPlay
             className={styles.playRecorded}
           />
-          <button onClick={uploadRecording}>Save Recording</button>
+          <button className={styles.saveButton} onClick={uploadRecording}>Save Recording</button>
         </>
       )}
     </div>
