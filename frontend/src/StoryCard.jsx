@@ -71,7 +71,7 @@ function StoryCard() {
         </div>
 
         <RecordAudio
-          englishPhrase={'fish'}
+          englishPhrase={term}
           blackfootPhrase={blackfootWord}
         ></RecordAudio>
       </div>
