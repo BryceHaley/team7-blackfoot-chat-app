@@ -26,7 +26,8 @@ function StoryCard() {
   const [blackfootWord, setBlackfootWord] = useState('mamii');
 
   async function retrieveBlackfootTranslation() {
-    const results = await http.post('/audio_data', { english_term: 'fish' });
+    // REMOVED. Not using API for retrieving translations yet
+    const results = null; // await http.post('/audio_data', { english_term: 'fish' });
 
     // TODO: API needs to return Blackfoot word
     const blackfootWord = results?.data?.blackfoot_term || 'mamii';
