@@ -64,10 +64,10 @@ function StoryCard() {
         <div className={styles.blackfootWord}>{blackfootWord}</div>
         <div dangerouslySetInnerHTML={{ __html: sentence }}></div>
         <div className={styles.audioControls}>
-          <video controls>
+          <audio controls>
             <source src={audioFilename} type="audio/wav" />
             Your browser does not support the audio element.
-          </video>
+          </audio>
         </div>
 
         <RecordAudio
