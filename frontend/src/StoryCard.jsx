@@ -44,6 +44,10 @@ function StoryCard() {
         `https://blackfoot-wav-files.s3.us-east-2.amazonaws.com/${wavFile}`
       );
     }
+    const audioControl = document.querySelector('#playit');
+    if (audioControl) {
+      audioControl.load();
+    }
   });
 
   function visitNextCard() {
@@ -64,9 +68,9 @@ function StoryCard() {
         <div className={styles.blackfootWord}>{blackfootWord}</div>
         <div dangerouslySetInnerHTML={{ __html: sentence }}></div>
         <div className={styles.audioControls}>
-          <audio controls>
+          <audio id="playit" controls>
             <source src={audioFilename} type="audio/wav" />
-            Your browser does not support the audio element.
+            Your browser does not support the audio element
           </audio>
         </div>
 
