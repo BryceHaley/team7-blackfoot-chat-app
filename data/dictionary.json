@@ -1,0 +1,534 @@
+{
+    "Apples": {
+        "translation": "Aipasstaamiinammiksi",
+        "audio": "apples.wav"
+    },
+    "Bathroom": {
+        "translation": "Makapoiyiss",
+        "audio": "bathroom.wav"
+    },
+    "Boy": {
+        "translation": "Saahkomaapi",
+        "audio": "boy.wav"
+    },
+    "Bread": {
+        "translation": "Napayin",
+        "audio": "bread.wav"
+    },
+    "Burger": {
+        "translation": "Pikkiaaksin",
+        "audio": "burger.wav"
+    },
+    "Cafe": {
+        "translation": "Itoiyo’Pii",
+        "audio": "cafe.wav"
+    },
+    "Car": {
+        "translation": "Aiksistomatomahka",
+        "audio": "car.wav"
+    },
+    "Cinema": {
+        "translation": "Aisaksittoo",
+        "audio": "cinema.wav"
+    },
+    "Coffee": {
+        "translation": "Iitapsiksikimmii",
+        "audio": "coffee.wav"
+    },
+    "Day After Tomorrow": {
+        "translation": "Miistapatako’Sii",
+        "audio": "day_after_tomorrow.wav"
+    },
+    "Day Before Yesterday": {
+        "translation": "Miistapatonnii",
+        "audio": "day_before_yesterday.wav"
+    },
+    "Dessert": {
+        "translation": "Pisatsoyiikan",
+        "audio": "dessert.wav"
+    },
+    "Dog": {
+        "translation": "Imitaa",
+        "audio": "dog.wav"
+    },
+    "Door": {
+        "translation": "Kitsim",
+        "audio": "door.wav"
+    },
+    "Eight": {
+        "translation": "Naanisoyi",
+        "audio": "eight.wav"
+    },
+    "Eight Dollars": {
+        "translation": "Naanisoisopokssi",
+        "audio": "eight_dollars.wav"
+    },
+    "Eight O’Clock": {
+        "translation": "Naanisoyi",
+        "audio": "eight_o_clock.wav"
+    },
+    "Eighteen": {
+        "translation": "Naanisiikopotto",
+        "audio": "eighteen.wav"
+    },
+    "Eighteen Dollars": {
+        "translation": "Naanisiikopottsi",
+        "audio": "eighteen_dollars.wav"
+    },
+    "Eighty": {
+        "translation": "Naippo",
+        "audio": "eighty.wav"
+    },
+    "Eighty Dollars": {
+        "translation": "Naippi",
+        "audio": "eighty_dollars.wav"
+    },
+    "Elevator": {
+        "translation": "Aisspaohpii",
+        "audio": "elevator.wav"
+    },
+    "Eleven": {
+        "translation": "Ni’Tsikopotto",
+        "audio": "eleven.wav"
+    },
+    "Eleven Dollars": {
+        "translation": "Ni’Tsikopottsii",
+        "audio": "eleven_dollars.wav"
+    },
+    "Eleven O’Clock": {
+        "translation": "Ni’Tsikopotoyi",
+        "audio": "eleven_o_clock.wav"
+    },
+    "Evenings": {
+        "translation": "O’Takosii",
+        "audio": "evenings.wav"
+    },
+    "Father": {
+        "translation": "Inn",
+        "audio": "father.wav"
+    },
+    "Fifteen": {
+        "translation": "Nisitsikopotto",
+        "audio": "fifteen.wav"
+    },
+    "Fifteen Dollars": {
+        "translation": "Nisitsiikopottsii",
+        "audio": "fifteen_dollars.wav"
+    },
+    "Fifty": {
+        "translation": "Nisitsippo",
+        "audio": "fifty.wav"
+    },
+    "Fifty Dollars": {
+        "translation": "Nisitsippi",
+        "audio": "fifty_dollars.wav"
+    },
+    "Fish": {
+        "translation": "Mamii",
+        "audio": "fish.wav"
+    },
+    "Five": {
+        "translation": "Nisitoo",
+        "audio": "five.wav"
+    },
+    "Five Dollars": {
+        "translation": "Nisitoisopokssi",
+        "audio": "five_dollars.wav"
+    },
+    "Five O’Clock": {
+        "translation": "Nisitooyi",
+        "audio": "five_o_clock.wav"
+    },
+    "Forty": {
+        "translation": "Niisippo",
+        "audio": "forty.wav"
+    },
+    "Forty Dollars": {
+        "translation": "Niisippi",
+        "audio": "forty_dollars.wav"
+    },
+    "Four": {
+        "translation": "Niisoo",
+        "audio": "four.wav"
+    },
+    "Four Dollars": {
+        "translation": "Niisoisopokssi",
+        "audio": "four_dollars.wav"
+    },
+    "Four O’Clock": {
+        "translation": "Niisooyi",
+        "audio": "four_o_clock.wav"
+    },
+    "Fourteen": {
+        "translation": "Niisoikopotto",
+        "audio": "fourteen.wav"
+    },
+    "Fourteen Dollars": {
+        "translation": "Niisoikopottsii",
+        "audio": "fourteen_dollars.wav"
+    },
+    "Girl": {
+        "translation": "Aakiikoan",
+        "audio": "girl.wav"
+    },
+    "Half Dollar": {
+        "translation": "Omahkanao’Kssi",
+        "audio": "half_dollar.wav"
+    },
+    "Hello": {
+        "translation": "Oki",
+        "audio": "hello.wav"
+    },
+    "Hello Friend": {
+        "translation": "Oki Napi",
+        "audio": "hello_friend.wav"
+    },
+    "House": {
+        "translation": "Naapoiyiss",
+        "audio": "house.wav"
+    },
+    "How Are You?": {
+        "translation": "Tsa Niita’Piiwa?",
+        "audio": "how_are_you?.wav"
+    },
+    "How Much Does That Cost?": {
+        "translation": "Tsa Niitsistsaa? (Animate)",
+        "audio": "how_much_does_that_cost?.wav"
+    },
+    "How Much Does That Cost?": {
+        "translation": "Tsa Niitsohtoopi? (Inanimate)",
+        "audio": "how_much_does_that_cost?.wav"
+    },
+    "I Will Eat": {
+        "translation": "Nitaaksoyi",
+        "audio": "i_will_eat.wav"
+    },
+    "I Will Go": {
+        "translation": "Nitaakitapoo",
+        "audio": "i_will_go.wav"
+    },
+    "I’M Doing Good. You?": {
+        "translation": "Tsikohssokopii. Kistoo?",
+        "audio": "i_m_doing_good._you?.wav"
+    },
+    "In The Morning": {
+        "translation": "Ksisskanaotonniisi",
+        "audio": "in_the_morning.wav"
+    },
+    "Kitchen": {
+        "translation": "Itoiyo’Soap",
+        "audio": "kitchen.wav"
+    },
+    "Last Night": {
+        "translation": "Ko’Koyi",
+        "audio": "last_night.wav"
+    },
+    "Let’S Go": {
+        "translation": "Okí",
+        "audio": "let_s_go.wav"
+    },
+    "Man": {
+        "translation": "Ninaa",
+        "audio": "man.wav"
+    },
+    "Midnight": {
+        "translation": "Ihtatsikaikookoo",
+        "audio": "midnight.wav"
+    },
+    "Mother": {
+        "translation": "Iksisst",
+        "audio": "mother.wav"
+    },
+    "Night Club": {
+        "translation": "Itaisimmioapii",
+        "audio": "night_club.wav"
+    },
+    "Nine": {
+        "translation": "Piihksso",
+        "audio": "nine.wav"
+    },
+    "Nine Dollars": {
+        "translation": "Piihkssoisopokssi",
+        "audio": "nine_dollars.wav"
+    },
+    "Nine O’Clock": {
+        "translation": "Piihkssoyi",
+        "audio": "nine_o_clock.wav"
+    },
+    "Nineteen": {
+        "translation": "Piihkssiikopotto",
+        "audio": "nineteen.wav"
+    },
+    "Nineteen Dollars": {
+        "translation": "Piihkssokopottsi",
+        "audio": "nineteen_dollars.wav"
+    },
+    "Ninety": {
+        "translation": "Piihksippo",
+        "audio": "ninety.wav"
+    },
+    "Ninety Dollars": {
+        "translation": "Piihksippi",
+        "audio": "ninety_dollars.wav"
+    },
+    "No": {
+        "translation": "Saa",
+        "audio": "no.wav"
+    },
+    "Noon": {
+        "translation": "Ihtatsikaiksistsikoo",
+        "audio": "noon.wav"
+    },
+    "Not Too Bad": {
+        "translation": "Matohkwiikii",
+        "audio": "not_too_bad.wav"
+    },
+    "One": {
+        "translation": "Ni’Tokskaa",
+        "audio": "one.wav"
+    },
+    "One Dollar": {
+        "translation": "Ni’Tssopokssi",
+        "audio": "one_dollar.wav"
+    },
+    "One Hundred": {
+        "translation": "Kiipippo",
+        "audio": "one_hundred.wav"
+    },
+    "One Hundred Dollars": {
+        "translation": "Kiipippi",
+        "audio": "one_hundred_dollars.wav"
+    },
+    "One O’Clock": {
+        "translation": "Ni’Tokskaayi",
+        "audio": "one_o_clock.wav"
+    },
+    "Oranges": {
+        "translation": "Aotahkoinammiksi",
+        "audio": "oranges.wav"
+    },
+    "Potatoes Or Fries": {
+        "translation": "Paataakistsi",
+        "audio": "potatoes_or_fries.wav"
+    },
+    "Seven": {
+        "translation": "Ihkitsika",
+        "audio": "seven.wav"
+    },
+    "Seven Dollars": {
+        "translation": "Ihkitsikaisopokssi",
+        "audio": "seven_dollars.wav"
+    },
+    "Seven O’Clock": {
+        "translation": "Ihkitsikaayi",
+        "audio": "seven_o_clock.wav"
+    },
+    "Seventeen": {
+        "translation": "Ihkitsikiikopotto",
+        "audio": "seventeen.wav"
+    },
+    "Seventeen Dollars": {
+        "translation": "Ihkitsikiikopottsii",
+        "audio": "seventeen_dollars.wav"
+    },
+    "Seventy": {
+        "translation": "Ihkitsikippo",
+        "audio": "seventy.wav"
+    },
+    "Seventy Dollars": {
+        "translation": "Ihkitsikippi",
+        "audio": "seventy_dollars.wav"
+    },
+    "Six": {
+        "translation": "Naoo",
+        "audio": "six.wav"
+    },
+    "Six Dollars": {
+        "translation": "Naoisopokssi",
+        "audio": "six_dollars.wav"
+    },
+    "Six O’Clock": {
+        "translation": "Naooyi",
+        "audio": "six_o_clock.wav"
+    },
+    "Sixteen": {
+        "translation": "Naikopotto",
+        "audio": "sixteen.wav"
+    },
+    "Sixteen Dollars": {
+        "translation": "Naikopottsii",
+        "audio": "sixteen_dollars.wav"
+    },
+    "Sixty": {
+        "translation": "Niippo",
+        "audio": "sixty.wav"
+    },
+    "Sixty Dollars": {
+        "translation": "Niippi",
+        "audio": "sixty_dollars.wav"
+    },
+    "Store": {
+        "translation": "Itaohpomoapii",
+        "audio": "store.wav"
+    },
+    "Tea": {
+        "translation": "Siksikimmii",
+        "audio": "tea.wav"
+    },
+    "Ten": {
+        "translation": "Kiipo",
+        "audio": "ten.wav"
+    },
+    "Ten Cents (Dime)": {
+        "translation": "Kiipanoa’Kssi",
+        "audio": "ten_cents_(dime).wav"
+    },
+    "Ten Dollars": {
+        "translation": "Kiipii",
+        "audio": "ten_dollars.wav"
+    },
+    "Ten O’Clock": {
+        "translation": "Kiipoyi",
+        "audio": "ten_o_clock.wav"
+    },
+    "The Time Is Half Past …": {
+        "translation": "A’Noko’Tsitsskatooma",
+        "audio": "the_time_is_half_past_….wav"
+    },
+    "The Time Is Just Passed …": {
+        "translation": "Ako’Tsitskatoom",
+        "audio": "the_time_is_just_passed_….wav"
+    },
+    "The Time Is Nearing …": {
+        "translation": "Aitapahtawawka",
+        "audio": "the_time_is_nearing_….wav"
+    },
+    "The Time Is Now …": {
+        "translation": "Akaitootoo",
+        "audio": "the_time_is_now_….wav"
+    },
+    "Thirteen": {
+        "translation": "Niookskopotto",
+        "audio": "thirteen.wav"
+    },
+    "Thirteen Dollars": {
+        "translation": "Niookskopottsii",
+        "audio": "thirteen_dollars.wav"
+    },
+    "Thirty": {
+        "translation": "Niiyippo",
+        "audio": "thirty.wav"
+    },
+    "Thirty Dollars": {
+        "translation": "Niiyippi",
+        "audio": "thirty_dollars.wav"
+    },
+    "This Morning": {
+        "translation": "Ksisskanaotonni",
+        "audio": "this_morning.wav"
+    },
+    "This Morning I Will Eat Bread": {
+        "translation": "Ksisskanaotonni Nitaaksoyi Napayin",
+        "audio": "this_morning_i_will_eat_bread.wav"
+    },
+    "Three": {
+        "translation": "Niookska",
+        "audio": "three.wav"
+    },
+    "Three Dollars": {
+        "translation": "Niookskaisopokssi",
+        "audio": "three_dollars.wav"
+    },
+    "Three O’Clock": {
+        "translation": "Niookskaayi",
+        "audio": "three_o_clock.wav"
+    },
+    "Tipi": {
+        "translation": "Niitoiyiss",
+        "audio": "tipi.wav"
+    },
+    "Today": {
+        "translation": "Annohk",
+        "audio": "today.wav"
+    },
+    "Today I Will Go To The Cafe": {
+        "translation": "Annohk Nitaakitapoo Itoiyo’Pii",
+        "audio": "today_i_will_go_to_the_cafe.wav"
+    },
+    "Tomorrow": {
+        "translation": "Aapinakos",
+        "audio": "tomorrow.wav"
+    },
+    "Tomorrow": {
+        "translation": "Apinako’Ssi",
+        "audio": "tomorrow.wav"
+    },
+    "Tomorrow I Will Go To The Cinema": {
+        "translation": "Aapinakos Nitaakitapoo Aisaksittoo",
+        "audio": "tomorrow_i_will_go_to_the_cinema.wav"
+    },
+    "Tonight": {
+        "translation": "Kooko’Ssi",
+        "audio": "tonight.wav"
+    },
+    "Twelve": {
+        "translation": "Naatsikopotto",
+        "audio": "twelve.wav"
+    },
+    "Twelve Dollars": {
+        "translation": "Naatsikopottsii",
+        "audio": "twelve_dollars.wav"
+    },
+    "Twelve O’Clock": {
+        "translation": "Naatsikopotoyi",
+        "audio": "twelve_o_clock.wav"
+    },
+    "Twenty": {
+        "translation": "Naatsippo",
+        "audio": "twenty.wav"
+    },
+    "Twenty Dollars": {
+        "translation": "Naatsippi",
+        "audio": "twenty_dollars.wav"
+    },
+    "Twenty-Five Cents (Quarter)": {
+        "translation": "I’Nakanao’Kssi",
+        "audio": "twenty-five_cents_(quarter).wav"
+    },
+    "Two": {
+        "translation": "Naato’Ka",
+        "audio": "two.wav"
+    },
+    "Two Dollars": {
+        "translation": "Naato’Kiisopokssi",
+        "audio": "two_dollars.wav"
+    },
+    "Two O’Clock": {
+        "translation": "Naato’Kaayi",
+        "audio": "two_o_clock.wav"
+    },
+    "Water": {
+        "translation": "Aohkii",
+        "audio": "water.wav"
+    },
+    "What Is The Time?": {
+        "translation": "Tsa Aito’To?",
+        "audio": "what_is_the_time?.wav"
+    },
+    "Window": {
+        "translation": "Ksisstsikomstan",
+        "audio": "window.wav"
+    },
+    "Woman": {
+        "translation": "Aakii",
+        "audio": "woman.wav"
+    },
+    "Yes": {
+        "translation": "Aa",
+        "audio": "yes.wav"
+    },
+    "Yesterday": {
+        "translation": "Matonnii",
+        "audio": "yesterday.wav"
+    }
+}
