@@ -64,10 +64,10 @@ function StoryCard() {
         <div className={styles.blackfootWord}>{blackfootWord}</div>
         <div dangerouslySetInnerHTML={{ __html: sentence }}></div>
         <div className={styles.audioControls}>
-          <video controls>
+          <audio controls>
             <source src={audioFilename} type="audio/wav" />
             Your browser does not support the audio element.
-          </video>
+          </audio>
         </div>
 
         <RecordAudio
@@ -76,13 +76,17 @@ function StoryCard() {
         ></RecordAudio>
       </div>
 
-      <button className={styles.cardNext} onClick={visitPreviousCard}>
-        &lt;&nbsp;Previous
-      </button>
+      <div className={styles.cardNext}>
+        <button
+          className={styles.cardButtonPrev}
+          onClick={visitPreviousCard}
+        ></button>
 
-      <button className={styles.cardNext} onClick={visitNextCard}>
-        Next&nbsp;&gt;
-      </button>
+        <button
+          className={styles.cardButtonNext}
+          onClick={visitNextCard}
+        ></button>
+      </div>
     </div>
   );
 }
