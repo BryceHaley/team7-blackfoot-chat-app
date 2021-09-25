@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from utils import make_directory, save_recording_local, upload_to_cloud, analyze_audio
+from .utils import make_directory, save_recording_local, upload_to_cloud, analyze_audio
 from random import random
 
 app = Flask(__name__)
