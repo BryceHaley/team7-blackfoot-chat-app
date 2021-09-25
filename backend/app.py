@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from .utils import make_directory, save_recording
+from utils import make_directory, save_recording_local, upload_to_cloud
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -33,15 +33,16 @@ def audio_data():
         english_term = request.form['english_term']
 
         # save the audio recording locally for now
-        directory = make_directory(english_term) # creates a directory for every unique english term
-        save_recording(directory, audio_recording)
+        # directory = make_directory(english_term) # creates a directory for every unique english term
+        # save_recording_local(directory, audio_recording)
+
+        # TODO: send audio_recording to do some processing/data validation
+        # TODO: maybe perform some analysis on audio_recording?
 
 
-        # send a 201 response
-        response = jsonify({'message': 'audio recording has successfully been uploaded.'})
-        response.status_code = 201
-        return response
+        upload_result = upload_to_cloud(audio_recording, english_term) # save audio recording to cloudinary
 
+        return upload_result
 
 
 if __name__ == '__main__':
