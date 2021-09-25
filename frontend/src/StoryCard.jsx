@@ -76,13 +76,17 @@ function StoryCard() {
         ></RecordAudio>
       </div>
 
-      <button className={styles.cardNext} onClick={visitPreviousCard}>
-        &lt;&nbsp;Previous
-      </button>
+      <div className={styles.cardNext}>
+        <button
+          className={styles.cardButtonPrev}
+          onClick={visitPreviousCard}
+        ></button>
 
-      <button className={styles.cardNext} onClick={visitNextCard}>
-        Next&nbsp;&gt;
-      </button>
+        <button
+          className={styles.cardButtonNext}
+          onClick={visitNextCard}
+        ></button>
+      </div>
     </div>
   );
 }

@@ -11,12 +11,40 @@
 }
 
 .cardNext {
-  flex: 1;
+  /* flex: 1; */
   text-align: center;
-  border: 1px solid #E2AF2C;
+  /* border: 1px solid #e2af2c; */
   margin: 2rem;
   padding: 0.8rem;
   font-size: 1.5rem;
+}
+
+.cardButtonPrev {
+  margin: 2rem;
+  padding: 1rem;
+  background-image: url('/icons/left arrow.png');
+  background-color: #f0c326;
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.cardButtonNext {
+  margin: 2rem;
+  padding: 1rem;
+  background-image: url('/icons/right arrow.png');
+  background-color: #f0c326;
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  border: 0;
+  border-radius: 4px;
 }
 
 .blackfootWord {
