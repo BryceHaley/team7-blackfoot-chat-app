@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
-from utils import make_directory, save_recording
+from .utils import make_directory, save_recording
 
 app = Flask(__name__)
 cors = CORS(app)
