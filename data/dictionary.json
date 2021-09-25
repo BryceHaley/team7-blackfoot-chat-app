@@ -23,10 +23,6 @@
         "translation": "Itoiyo’Pii",
         "audio": "cafe.wav"
     },
-    "Car": {
-        "translation": "Aiksistomatomahka",
-        "audio": "car.wav"
-    },
     "Cinema": {
         "translation": "Aisaksittoo",
         "audio": "cinema.wav"
@@ -50,10 +46,6 @@
     "Dog": {
         "translation": "Imitaa",
         "audio": "dog.wav"
-    },
-    "Door": {
-        "translation": "Kitsim",
-        "audio": "door.wav"
     },
     "Eight": {
         "translation": "Naanisoyi",
@@ -79,10 +71,6 @@
         "translation": "Naippo",
         "audio": "eighty.wav"
     },
-    "Eighty Dollars": {
-        "translation": "Naippi",
-        "audio": "eighty_dollars.wav"
-    },
     "Elevator": {
         "translation": "Aisspaohpii",
         "audio": "elevator.wav"
@@ -101,7 +89,7 @@
     },
     "Evenings": {
         "translation": "O’Takosii",
-        "audio": "evenings.wav"
+        "audio": "evening.wav"
     },
     "Father": {
         "translation": "Inn",
@@ -142,10 +130,6 @@
     "Forty": {
         "translation": "Niisippo",
         "audio": "forty.wav"
-    },
-    "Forty Dollars": {
-        "translation": "Niisippi",
-        "audio": "forty_dollars.wav"
     },
     "Four": {
         "translation": "Niisoo",
@@ -189,15 +173,7 @@
     },
     "How Are You?": {
         "translation": "Tsa Niita’Piiwa?",
-        "audio": "how_are_you?.wav"
-    },
-    "How Much Does That Cost?": {
-        "translation": "Tsa Niitsistsaa? (Animate)",
-        "audio": "how_much_does_that_cost?.wav"
-    },
-    "How Much Does That Cost? (Inanimate)": {
-        "translation": "Tsa Niitsohtoopi? (Inanimate)",
-        "audio": "how_much_does_that_cost?.wav"
+        "audio": "how_are_you.wav"
     },
     "I Will Eat": {
         "translation": "Nitaaksoyi",
@@ -206,10 +182,6 @@
     "I Will Go": {
         "translation": "Nitaakitapoo",
         "audio": "i_will_go.wav"
-    },
-    "I’M Doing Good. You?": {
-        "translation": "Tsikohssokopii. Kistoo?",
-        "audio": "i_m_doing_good._you?.wav"
     },
     "In The Morning": {
         "translation": "Ksisskanaotonniisi",
@@ -295,10 +267,6 @@
         "translation": "Kiipippo",
         "audio": "one_hundred.wav"
     },
-    "One Hundred Dollars": {
-        "translation": "Kiipippi",
-        "audio": "one_hundred_dollars.wav"
-    },
     "One O’Clock": {
         "translation": "Ni’Tokskaayi",
         "audio": "one_o_clock.wav"
@@ -306,10 +274,6 @@
     "Oranges": {
         "translation": "Aotahkoinammiksi",
         "audio": "oranges.wav"
-    },
-    "Potatoes Or Fries": {
-        "translation": "Paataakistsi",
-        "audio": "potatoes_or_fries.wav"
     },
     "Seven": {
         "translation": "Ihkitsika",
@@ -363,10 +327,6 @@
         "translation": "Niippo",
         "audio": "sixty.wav"
     },
-    "Sixty Dollars": {
-        "translation": "Niippi",
-        "audio": "sixty_dollars.wav"
-    },
     "Store": {
         "translation": "Itaohpomoapii",
         "audio": "store.wav"
@@ -393,19 +353,19 @@
     },
     "The Time Is Half Past …": {
         "translation": "A’Noko’Tsitsskatooma",
-        "audio": "the_time_is_half_past_….wav"
+        "audio": "the_time_is_half_past.wav"
     },
     "The Time Is Just Passed …": {
         "translation": "Ako’Tsitskatoom",
-        "audio": "the_time_is_just_passed_….wav"
+        "audio": "the_time_is_just_passed.wav"
     },
     "The Time Is Nearing …": {
         "translation": "Aitapahtawawka",
-        "audio": "the_time_is_nearing_….wav"
+        "audio": "the_time_is_nearing.wav"
     },
     "The Time Is Now …": {
         "translation": "Akaitootoo",
-        "audio": "the_time_is_now_….wav"
+        "audio": "the_time_is_now.wav"
     },
     "Thirteen": {
         "translation": "Niookskopotto",
@@ -426,10 +386,6 @@
     "This Morning": {
         "translation": "Ksisskanaotonni",
         "audio": "this_morning.wav"
-    },
-    "This Morning I Will Eat Bread": {
-        "translation": "Ksisskanaotonni Nitaaksoyi Napayin",
-        "audio": "this_morning_i_will_eat_bread.wav"
     },
     "Three": {
         "translation": "Niookska",
@@ -509,7 +465,7 @@
     },
     "What Is The Time?": {
         "translation": "Tsa Aito’To?",
-        "audio": "what_is_the_time?.wav"
+        "audio": "what_is_the_time.wav"
     },
     "Window": {
         "translation": "Ksisstsikomstan",
