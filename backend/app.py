@@ -6,6 +6,11 @@ app = Flask(__name__)
 cors = CORS(app)
 
 
+@app.route("/")
+def index():
+    return "Hello World! This is the Blackfoot Language Application's BE."
+
+
 @app.route('/audio_data', methods=['POST'])
 @cross_origin()
 def audio_data():
