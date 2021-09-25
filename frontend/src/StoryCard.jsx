@@ -1,62 +1,88 @@
 import React, { useEffect, useState } from 'react';
 import styles from './StoryCard.module.css';
 import RecordAudio from './RecordAudio';
-import http from './lib/http-common';
+import blackfootDictionary from './data/dictionary.json';
 
-// Brainstorming data structure for representing a list of stories
-// and the individual cards that go with each story.
+const style = styles.englishWord;
 const stories = {
   story_1: {
     card_1: {
-      term: 'fish',
-      sentence: 'A long, long, long time ago there once lived a {term}',
+      term: 'In The Morning',
+      sentence: `<span class=${style}>In the morning</span>, I decided to go to the river.`,
     },
     card_2: {
-      term: 'raven',
-      sentence: 'A long, long, long time ago there once lived a {term}',
+      term: 'Fish',
+      sentence: `As I was walking, I remembered a story about a <span class=${style}>fish</span> my grandmother told me.`,
     },
-  },
-  story_2: {
-    card_1: {},
-    card_2: {},
+    card_3: {
+      term: 'Water',
+      sentence: `&quot;Long long ago, the fish would guide the people and help them navigate the world of <span class=${style}>Water<span>.&quot;`,
+    },
   },
 };
 
 function StoryCard() {
-  const [blackfootWord, setBlackfootWord] = useState('mamii');
-
-  async function retrieveBlackfootTranslation() {
-    // REMOVED. Not using API for retrieving translations yet
-    const results = null; // await http.post('/audio_data', { english_term: 'fish' });
-
-    // TODO: API needs to return Blackfoot word
-    const blackfootWord = results?.data?.blackfoot_term || 'mamii';
-    setBlackfootWord(blackfootWord);
-  }
+  const [currentCard, setCurrentCard] = useState(1);
+  const [term, setTerm] = useState('');
+  const [sentence, setSentence] = useState('');
+  const [blackfootWord, setBlackfootWord] = useState('');
+  const [audioFilename, setAudioFilename] = useState('');
 
   useEffect(() => {
-    retrieveBlackfootTranslation();
+    const story = stories['story_1'];
+    const currentCardKeyname = `card_${currentCard}`;
+    const term = story[currentCardKeyname].term;
+    const translation = blackfootDictionary[term].translation;
+    const wavFile = blackfootDictionary[term].audio;
+    setTerm(term);
+    setSentence(story[currentCardKeyname].sentence);
+    if (translation) {
+      setBlackfootWord(translation);
+    }
+    if (wavFile) {
+      setAudioFilename(
+        `https://blackfoot-wav-files.s3.us-east-2.amazonaws.com/${wavFile}`
+      );
+    }
   });
+
+  function visitNextCard() {
+    if (currentCard < Object.keys(stories['story_1']).length) {
+      setCurrentCard(currentCard + 1);
+    }
+  }
+
+  function visitPreviousCard() {
+    if (currentCard > 1) {
+      setCurrentCard(currentCard - 1);
+    }
+  }
 
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
         <div className={styles.blackfootWord}>{blackfootWord}</div>
-        <div>
-          A long, long, long time ago there once lived a{' '}
-          <span className={styles.englishWord}>fish</span>.
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: sentence }}></div>
         <div className={styles.audioControls}>
           <audio controls>
-            <source src="/audio/fish.wav" type="audio/wav" />
+            <source src={audioFilename} type="audio/wav" />
             Your browser does not support the audio element.
           </audio>
         </div>
 
-        <RecordAudio englishPhrase={'fish'} blackfootPhrase={blackfootWord}></RecordAudio>
+        <RecordAudio
+          englishPhrase={'fish'}
+          blackfootPhrase={blackfootWord}
+        ></RecordAudio>
       </div>
 
-      <div className={styles.cardNext}>Next&nbsp;&gt;</div>
+      <button className={styles.cardNext} onClick={visitPreviousCard}>
+        &lt;&nbsp;Previous
+      </button>
+
+      <button className={styles.cardNext} onClick={visitNextCard}>
+        Next&nbsp;&gt;
+      </button>
     </div>
   );
 }
