@@ -65,10 +65,11 @@ function StoryCard() {
   return (
     <div className={styles.card}>
       <div className={styles.cardTop}>
-        <div className={styles.cardNext}>
+        <div className={styles.cardNav}>
           <button
             className={styles.cardButtonPrev}
             onClick={visitPreviousCard}
+            disabled={currentCard === 1}
           ></button>
         </div>
 
@@ -83,10 +84,11 @@ function StoryCard() {
           </div>
         </div>
 
-        <div className={styles.cardNext}>
+        <div className={styles.cardNav}>
           <button
             className={styles.cardButtonNext}
             onClick={visitNextCard}
+            disabled={currentCard === Object.keys(stories['story_1']).length}
           ></button>
         </div>
       </div>

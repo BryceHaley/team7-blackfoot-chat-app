@@ -17,10 +17,14 @@
   text-align: center;
 }
 
-.cardNext {
+.cardNav {
   flex: 1;
   text-align: center;
   font-size: 1.5rem;
+}
+
+.cardNav button:disabled {
+  opacity: 0.4;
 }
 
 .cardButtonPrev {
