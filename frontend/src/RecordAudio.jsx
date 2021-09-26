@@ -75,7 +75,9 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
             onClick={toggleRecording}
             title="Stop recording"
             className={styles.stopRecordingButton}
-          >Stop</button>
+          >
+            Stop
+          </button>
         </div>
       )}
 
@@ -89,7 +91,11 @@ function RecordAudio({ blackfootPhrase, englishPhrase }) {
             autoPlay
             className={styles.playRecorded}
           />
-          <button className={styles.saveButton} onClick={uploadRecording}>Save Recording</button>
+          <div>
+            <button className={styles.saveButton} onClick={uploadRecording}>
+              Save Recording
+            </button>
+          </div>
         </>
       )}
     </div>

@@ -64,32 +64,40 @@ function StoryCard() {
 
   return (
     <div className={styles.card}>
-      <div className={styles.cardContent}>
-        <div className={styles.blackfootWord}>{blackfootWord}</div>
-        <div dangerouslySetInnerHTML={{ __html: sentence }}></div>
-        <div className={styles.audioControls}>
-          <audio id="playit" controls>
-            <source src={audioFilename} type="audio/wav" />
-            Your browser does not support the audio element
-          </audio>
+      <div className={styles.cardTop}>
+        <div className={styles.cardNav}>
+          <button
+            className={styles.cardButtonPrev}
+            onClick={visitPreviousCard}
+            disabled={currentCard === 1}
+          ></button>
         </div>
 
+        <div className={styles.cardContent}>
+          <div className={styles.blackfootWord}>{blackfootWord}</div>
+          <div dangerouslySetInnerHTML={{ __html: sentence }}></div>
+          <div className={styles.audioControls}>
+            <audio id="playit" controls>
+              <source src={audioFilename} type="audio/wav" />
+              Your browser does not support the audio element
+            </audio>
+          </div>
+        </div>
+
+        <div className={styles.cardNav}>
+          <button
+            className={styles.cardButtonNext}
+            onClick={visitNextCard}
+            disabled={currentCard === Object.keys(stories['story_1']).length}
+          ></button>
+        </div>
+      </div>
+      <div className={styles.cardBottom}>
         <RecordAudio
+          key={term}
           englishPhrase={term}
           blackfootPhrase={blackfootWord}
         ></RecordAudio>
-      </div>
-
-      <div className={styles.cardNext}>
-        <button
-          className={styles.cardButtonPrev}
-          onClick={visitPreviousCard}
-        ></button>
-
-        <button
-          className={styles.cardButtonNext}
-          onClick={visitNextCard}
-        ></button>
       </div>
     </div>
   );
