@@ -94,6 +94,7 @@ function StoryCard() {
       </div>
       <div className={styles.cardBottom}>
         <RecordAudio
+          key={term}
           englishPhrase={term}
           blackfootPhrase={blackfootWord}
         ></RecordAudio>
