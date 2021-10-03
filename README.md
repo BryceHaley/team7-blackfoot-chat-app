@@ -23,17 +23,21 @@ see: https://drive.google.com/drive/folders/15Bgs5IBf684G1v1KbaqmRtjVzijToFIt
 
 ## Project team members
 
-Team lead: Bryce Haley
+## Project Team Members
 
-Mentor: Oisín Bates
+Team Lead: [Bryce Haley](https://github.com/BryceHaley)
 
-UI/UX: Shin-you Hou
+Mentor: [Oisín Bates](https://github.com/oisinBates)
 
-Front-End Development: Inayat Lakhani, Brian Gershon
+UI/UX Design: [Shin-you Hou](https://github.com/slantingsunrays)
 
-Back-End Development: Choenden Kyirong
+Front-End Development: [Brian Gershon](https://github.com/briangershon) and [Inayat Lakhani](https://github.com/inayat1999)
 
-Extra Admin/SME Help: Lisa N. Cao, Ruiz Rivera
+Back-End Development and Data Analysis: [Choenden Kyirong](https://github.com/kyirong6)
+
+Wrangling Translation Data: [Inayat Lakhani](https://github.com/inayat1999)
+
+Extra Admin/SME Help: [Lisa N. Cao](https://github.com/lisancao), Ruiz Rivera
 
 ## Vancouver Datajam 2021 Schedule:
 
