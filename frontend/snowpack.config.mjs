@@ -1,7 +1,5 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 
-console.log('NODE_ENV', process.env.NODE_ENV);
-
 export default {
   mount: {
     public: '/',
@@ -18,19 +16,7 @@ export default {
     target: 'es2018',
   },
   packageOptions: {
-    polyfillNode: true,
-    rollup: {
-      plugins: [
-        {
-          name: 'externalize-react',
-          options: (options) => {
-            const isSnowpackExternal = options.external;
-            options.external = (id) =>
-              id === 'react' || id === 'react-dom' || isSnowpackExternal(id);
-          },
-        },
-      ],
-    },
+    /* ... */
   },
   devOptions: {
     /* ... */
