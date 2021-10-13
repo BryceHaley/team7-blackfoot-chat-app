@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useReactMediaRecorder } from 'react-media-recorder';
+import { useReactMediaRecorder } from './lib/ReactMediaRecorder';
 import http from './lib/http-common';
 import styles from './RecordAudio.module.css';
 

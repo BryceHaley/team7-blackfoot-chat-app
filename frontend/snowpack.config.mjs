@@ -4,10 +4,10 @@ console.log('NODE_ENV', process.env.NODE_ENV);
 
 export default {
   mount: {
-    public: '/',
-    src: '/dist',
+    public: "/",
+    src: "/dist",
   },
-  plugins: ['@snowpack/plugin-react-refresh'],
+  plugins: ["@snowpack/plugin-react-refresh"],
   routes: [
     /* Enable an SPA Fallback in development: */
     { match: 'routes', src: '.*', dest: '/index.html' },
@@ -18,19 +18,7 @@ export default {
     target: 'es2018',
   },
   packageOptions: {
-    polyfillNode: true,
-    rollup: {
-      plugins: [
-        {
-          name: 'externalize-react',
-          options: (options) => {
-            const isSnowpackExternal = options.external;
-            options.external = (id) =>
-              id === 'react' || id === 'react-dom' || isSnowpackExternal(id);
-          },
-        },
-      ],
-    },
+    /* ... */
   },
   devOptions: {
     /* ... */
